@@ -67,12 +67,22 @@ for(usuario of users){
 
        
     }
-    if(usuario.name != undefined){
-    users.push(usuario.favoritesSounds.avg = usuario.name + ' media: ' + avg)
-    i = i + 1
-}
+//    if(usuario.name != undefined){
+//    users.push(usuario.favoritesSounds.avg = usuario.name + ' media: ' + avg)
+//    i = i + 1
+//}
 }
 
 console.log(users)
 
 
+let addExtraOption = (data) => {
+    for( value of data){
+        
+        value.favoritesSounds.media = avg
+    }
+
+    console.log(data)
+}
+
+addExtraOption(users)
